@@ -1,0 +1,14 @@
+[
+  {"name":"coast","photo":"photo-1733836238509-9949640c47aa","source":"https://unsplash.com/photos/_0mtp_GCEn8","label":"Cape Town at sunset"},
+  {"name":"sunset","photo":"photo-1675118222053-6ca479bdc883","source":"https://unsplash.com/photos/lKh19I8nJ68","label":"Sunset over the rocky shore","author":"Falco Negenman"},
+  {"name":"beach","photo":"photo-1563656157432-67560011e209","source":"https://unsplash.com/photos/L6EP96_w1Fc","label":"Table Mountain from the beach","author":"Brent Ninaber"},
+  {"name":"forest","photo":"photo-1588027934983-925918135a30","source":"https://unsplash.com/photos/KUdBy3f2RYk","label":"A trail through a misty forest","author":"Vinu T"},
+  {"name":"coffee","photo":"photo-1525629545813-e4e7ba89e506","source":"https://unsplash.com/photos/Pr0cSVaKQ0k","label":"A quiet coffee break","author":"James Owen"},
+  {"name":"city","photo":"photo-1518729406574-12149251ac0c","source":"https://unsplash.com/s/photos/city-street","label":"Brick buildings on a city street"},
+  {"name":"architecture","photo":"photo-1719952167424-ff81f747840a","source":"https://unsplash.com/photos/CFurgkhVRmE","label":"Old and new architecture"},
+  {"name":"coastline","photo":"photo-1581596326248-f55ac7852760","source":"https://unsplash.com/photos/-7ZwuyDx2rI","label":"The Camps Bay coastline","author":"Tobias Reich"},
+  {"name":"avatar-alex","photo":"photo-1625241152315-4a698f74ceb7","source":"https://unsplash.com/pt-br/s/fotografias/sorriso-do-homem","label":"Stock portrait for a fictional demo account"},
+  {"name":"avatar-zola","photo":"photo-1687360440094-949b8fe71c8c","source":"https://unsplash.com/photos/lh9_ATRPKJQ","label":"Stock portrait for a fictional demo account","author":"Hiki App"},
+  {"name":"avatar-mia","photo":"photo-1547513920-59112f06815f","source":"https://unsplash.com/photos/iDn93IJlgpk","label":"Stock portrait for a fictional demo account","author":"João Paulo de Souza Oliveira"},
+  {"name":"avatar-kai","photo":"photo-1583123810408-23e7b5d1af9f","source":"https://unsplash.com/s/photos/man-smile","label":"Stock portrait for a fictional demo account"}
+]

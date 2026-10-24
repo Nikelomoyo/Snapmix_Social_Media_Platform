@@ -1,0 +1,67 @@
+/* Charcoal glass: keep the warm accents and photography, deepen the surfaces. */
+:root{--bg:#050607;--panel:#121416;--line:#ffffff18}
+html,body{background-color:#050607}
+body{background-image:radial-gradient(ellipse at 8% 0%,#6e849b0d,transparent 50%),radial-gradient(ellipse at 100% 80%,#bb796108,transparent 55%)}
+.sidebar{background:#090a0ced;border-color:#ffffff12}
+.topbar{background:#070809e8;border-color:#ffffff12}
+.sidebar nav a[aria-current]{background:linear-gradient(100deg,#ffffff0e,#ffffff03);border-color:#ffffff14}
+.panel,.composer,.post.panel,.person-card.panel,.rightbar .panel{background:linear-gradient(120deg,#ffffff04,transparent 80%),#121416;border-color:#ffffff18}
+.sidebar>.user-chip,.view-switch,.chat-search,.quick-comment,.post .post-actions button,.post .post-actions a{background:#121418;border-color:#ffffff18}
+input,textarea,.post-topic-field select,.discover-toolbar select{background:#101216;border-color:#ffffff1c}
+.composer textarea,.quick-comment input,.chat-search input{background:transparent}
+.discover-feature,.profile-shell{background:linear-gradient(130deg,#ffffff05,#d5a48c04),#151719;border-color:#ffffff1c}
+.discover-creators{background:linear-gradient(90deg,#ffffff06,#d8af8f04);border-color:#ffffff14}
+.discover-search{background:#ffffff04;border-color:#ffffff18}
+.discover-search>input:not([type=hidden]){background:transparent}
+.discover-card-photo,.profile-empty,.form-panel,.auth-shell .form-panel{background:#121416;border-color:#ffffff18}
+.discover-thought,.profile-page .profile-grid .tile-text{background:linear-gradient(130deg,#292d35,#181a20)}
+.profile-page .collection-strip{background:linear-gradient(100deg,#e6b79c07,#ffffff02),#101214;border-color:#ffffff16}
+.profile-shell .profile-avatar>.avatar{border-color:#151719}
+.conversation-list,.messenger .chat-room{background:#101214;border-color:#ffffff18}
+.messenger .chat-heading,.messenger #message-form{background:#171a1d;border-color:#ffffff14}
+.message-wall{background-color:#111318;background-image:radial-gradient(ellipse at 0% 0%,#7b8c9e08,transparent 65%),radial-gradient(#ffffff06 .7px,transparent .7px)}
+.messenger .message{background:#252932;border-color:#ffffff14}
+.messenger #message-input{background:#111419;border-color:#ffffff18}
+.messenger #older{background:#171a1d;border-color:#ffffff18}
+.chat-inspiration[open],.emoji-tray{background:#171a1d;border-color:#ffffff14}
+.inbox-hero-art{background:radial-gradient(ellipse at 10% 20%,#6e849b10,transparent 70%),linear-gradient(135deg,#242830,#e3af8c08)}
+.inbox-hero-copy,.message-ideas,.taste-card,.activity-list,.activity-empty,.activity-people{background:#141719;border-color:#ffffff18}
+.activity-metrics>a{background:linear-gradient(130deg,#d8ba9e04,#ffffff02),#141719;border-color:#ffffff18}
+.activity-mix-card{background:linear-gradient(135deg,#8a9bb50d,#d3a68c08),#191d20;border-color:#ffffff1c}
+.activity-avatar>.activity-icon{border-color:#141719}
+
+/* Frosted mint actions against ink-black surfaces. */
+:root{--accent:#9edecb;--yellow:#9edecb;--coral:#d99baf}
+.button.yellow,button.yellow,.composer button.yellow,.profile-shell .profile-buttons .yellow,.profile-buttons .yellow,.messenger #send-message{background:linear-gradient(135deg,#b6eadb,#8fd2bc);border-color:#c6f0e2;color:#10251e;box-shadow:inset 0 1px 0 #ffffff45,0 4px 16px #67c4a610}
+.button.yellow:hover,button.yellow:hover,.composer button.yellow:hover,.profile-shell .profile-buttons .yellow:hover,.profile-buttons .yellow:hover,.messenger #send-message:hover{background:linear-gradient(135deg,#cef3e7,#a7e2cf);border-color:#d7f8ed;color:#10251e;box-shadow:0 5px 20px #67c4a61c}
+button,.button{border-color:#ffffff1c}
+button:focus-visible,.button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #9edecb;outline-offset:3px}
+.sidebar nav a[aria-current]{box-shadow:inset 2px 0 0 #9edecb;color:#d7eee6}
+.sidebar nav b,.badge,.conversation .badge{background:#9edecb;color:#10251e}
+.dot,.club h2 span,.follow-small,.quick-comment button,.discover-search button,.sort-apply,.auth-shell .form-panel a{color:#9edecb}
+.feed-tabs .selected{border-bottom-color:#9edecb}
+.discover-filters>a[aria-current=page],.activity-filters>a[aria-current=page]{background:#9edecb;border-color:#c6f0e2;color:#10251e}
+.view-switch button[aria-pressed=true],.inbox-filters button[aria-pressed=true]{background:#9edecb18;border-color:#9edecb38;color:#c3eadc}
+.post .post-actions .active{color:#e6a9be;background:#e6a9be12;border-color:#e6a9be30}
+.taste-card:has(input:checked){border-color:#9edecb;background:#9edecb0d;box-shadow:0 0 0 1px #9edecb35}
+.taste-card:has(input:checked) .taste-check{background:#9edecb;border-color:#c6f0e2;color:#10251e}
+.messenger .message.own{background:#a2d9c9;border-color:#c6f0e24d;color:#17352a}
+.own .message-time,.own .sent-check{color:#3a6253!important}
+
+/* Readable secondary actions in the same mint palette as primary buttons. */
+.topbar-actions>a,.topbar-actions .interest-settings-link{font-size:13px;font-weight:600;line-height:1.5;color:#bcebdc;background:#9edecb08;border-color:#9edecb26;padding:10px 14px}
+.topbar-actions>a:hover,.topbar-actions .interest-settings-link:hover{color:#e0fff3;background:#9edecb14;border-color:#9edecb55}
+.club>a{display:inline-block;font-size:13px;font-weight:600;line-height:1.7;color:#bcebdc;padding:8px 0}
+.rightbar .section-heading a,.sidebar-photos .section-heading a,.section-heading a,.hub-section-title>a{font-size:12px;font-weight:500;line-height:1.6;color:#aedacb}
+.sidebar-interests{font-size:13px;font-weight:500;color:#bcebdc;padding:15px 7px}
+.club>a:hover,.section-heading a:hover,.rightbar .section-heading a:hover,.hub-section-title>a:hover,.sidebar-interests:hover{color:#e0fff3;text-decoration:underline;text-underline-offset:4px}
+.club p{font-size:13px;line-height:1.8;color:#adb9b5}
+.topbar>span{font-size:10px;color:#a0b2aa}
+@media(max-width:650px){
+ .topbar>span{display:none}
+ .topbar{justify-content:flex-end}
+ .topbar-actions>a,.topbar-actions .interest-settings-link{font-size:12px;padding:9px 11px}
+ .topbar-actions .interest-settings-link>span{display:inline}
+ .topbar-actions{gap:7px}
+ .section-heading a,.hub-section-title>a{font-size:12px}
+}

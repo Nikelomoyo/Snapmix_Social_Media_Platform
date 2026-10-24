@@ -1,0 +1,21 @@
+.venv/
+.env
+.env.*
+!.env.example
+db.sqlite3
+*.sqlite3
+*.sqlite3-*
+*.db
+media/
+staticfiles/
+__pycache__/
+*.pyc
+.qa/
+
+private_media/
+
+# Local previews and editor/OS files
+preview-*.png
+*.log
+.DS_Store
+Thumbs.db

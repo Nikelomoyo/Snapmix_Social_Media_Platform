@@ -1,0 +1,1 @@
+<span class="avatar">{% if person.profile.avatar %}<img src="{{ person.profile.avatar.url }}" alt="{{ person.profile.name }}">{% else %}{{ person.profile.name|first|upper }}{% endif %}</span>

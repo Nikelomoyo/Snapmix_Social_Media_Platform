@@ -1,0 +1,1 @@
+<div class="pagination">{% if page.has_previous %}<a class="button" href="?{{ pagination_query }}page={{ page.previous_page_number }}">← Newer</a>{% endif %}{% if page.has_next %}<a class="button yellow" href="?{{ pagination_query }}page={{ page.next_page_number }}">Load more ↓</a>{% endif %}</div>

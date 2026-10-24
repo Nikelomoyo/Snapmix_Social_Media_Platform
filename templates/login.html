@@ -1,0 +1,4 @@
+{% extends 'base.html' %}{% block auth %}
+<div class="auth-art">✳ ☺<h1>Your people.<br>Your kind of chaos.</h1><p>Welcome back to your little corner of the internet.</p></div>
+<form class="panel form-panel" method="post">{% csrf_token %}<h2>Get back in the mix.</h2>{{ form.as_p }}<button class="yellow">Log in ↗</button><p>New around here? <a href="{% url 'signup' %}">Create an account</a></p></form>
+{% endblock %}

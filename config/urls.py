@@ -1,0 +1,8 @@
+from django.urls import path, include
+from django.contrib import admin
+from django.contrib.auth.views import LoginView, LogoutView
+from django.conf import settings
+from django.conf.urls.static import static
+from . import views as v
+urlpatterns = [path('missions/',include('missions.urls')),path('interests/',v.interests,name='interests'),path('admin/',admin.site.urls),path('',v.feed,name='home'),path('explore/',v.feed,{'explore':True},name='explore'),path('signup/',v.signup,name='signup'),path('login/',LoginView.as_view(template_name='login.html'),name='login'),path('logout/',LogoutView.as_view(),name='logout'),path('profile/edit/',v.edit_profile,name='edit_profile'),path('people/',v.search,name='search'),path('u/<str:username>/',v.profile,name='profile'),path('u/<str:username>/follow/',v.follow,name='follow'),path('u/<str:username>/<str:kind>/',v.connections,name='connections'),path('posts/<int:pk>/',v.detail,name='detail'),path('posts/<int:pk>/like/',v.like,name='like'),path('posts/<int:pk>/edit/',v.edit_content,name='edit_post'),path('posts/<int:pk>/delete/',v.delete_content,name='delete_post'),path('comments/<int:pk>/edit/',v.edit_content,{'comment':True},name='edit_comment'),path('comments/<int:pk>/delete/',v.delete_content,{'comment':True},name='delete_comment'),path('notifications/',v.notifications,name='notifications'),path('messages/',v.inbox,name='inbox'),path('messages/start/<str:username>/',v.start_chat,name='start_chat'),path('messages/<int:pk>/',v.inbox,name='conversation'),path('messages/<int:pk>/read/',v.read_messages,name='read_messages'),path('messages/<int:pk>/history/',v.history,name='history')]
+if settings.DEBUG: urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

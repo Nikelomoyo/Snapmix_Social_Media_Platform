@@ -1,0 +1,8 @@
+<a class="mission-card" href="{% url 'missions:detail' mission.pk %}">
+ <div class="mission-card-art {% if not mission.cover %}mission-card-collage{% endif %}">
+ {% if mission.cover %}<img src="{% url 'missions:media' mission.pk 'cover' mission.pk %}" alt="Cover for {{ mission.title }}" loading="lazy">
+ {% else %}{% for entry in mission.preview %}{% if entry.image %}<img src="{% url 'missions:media' mission.pk 'entry' entry.pk %}" alt="Perspective by {{ entry.author.profile.name }}" loading="lazy">{% else %}<span class="mission-preview-word">{{ entry.text|truncatechars:60 }}</span>{% endif %}{% empty %}<span class="mission-art-mark" aria-hidden="true">✳</span><span class="mission-art-note">Your perspectives belong here.</span>{% endfor %}{% endif %}
+ <span class="mission-status {% if mission.is_closed %}finished{% endif %}">{% if mission.is_closed %}✦ Finished collection{% else %}● In the making{% endif %}</span>
+ </div>
+ <div class="mission-card-body"><span class="mission-card-meta">{% if mission.visibility == 'invite' %}INVITE ONLY{% else %}OPEN MISSION{% endif %} · BY @{{ mission.owner.username }}</span><h2>{{ mission.title }}</h2><p>{{ mission.prompt|truncatechars:110 }}</p><div class="mission-card-footer"><span><b>{{ mission.contribution_count }}</b> perspectives · {{ mission.people_count }} people</span><span aria-hidden="true">↗</span></div><small>{% if mission.is_closed %}Finished {{ mission.deadline|date:'j M' }}{% else %}Closes {{ mission.ends_at|timeuntil }} from now{% endif %}</small></div>
+</a>
